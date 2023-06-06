@@ -1,1 +1,50 @@
+<style>
+body {
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/job243-eye-01d_2_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=ac4293427cb57f53c92fee50b8e02e9a");
+}
+</style>
+<h1>
+Step 6: Setup Nuclear Detection
+</h1>
+<style> h1 {color: #BCB787; font-size:50px;}
+h1 {
+  text-align: center;
+}
+</style>
+<p>
+The proof of fusion (and a quantitative analysis of how much fusion) is obtained through deteting neutron radiation. the byproduct of a D-D fusion reaction. There are three options which will be described. They are in order of descending ease setup
+</p>
+<li>A Neutron Bubble Dosimeter. A bubble dosimeter is a small unit with a gel in it that forms bubbles when ionized by neutron radiation This is the easiest form of neutron detection available since all you have to do is unscrew the top and set it next to the fusor. Some of the drawbacks are that it is an integrative detector which means all you get is a total neutron emission number over the time it was used, rather than an instantaneuous neutron rate. Additionally they are somewhat hard to get since the only company to make them is Bubbletech in Canada, which has a minimum order of 3 with steep shipping and handling (expect to spend 700$+ if ordering directly from them not in a group buy). Additionally, they tend to be fairly worn out after a year of shelf life (althouh ive kept mine in a refrigerated storage container at 50*F and it seems to be like newa after i think more than a year) The advantage is that calibration data is provided with purchase and of course it is easy</li>
+<li>Silver Activation. When silver is placed near the reactor (with a moderator [paraffin wax, water, HDPE, etc] between it and the neutron source, since only thermal neutrons will activate the material, it becomes slightly radioactive with decent neutron fluxes. IT has a short half life of only a few minutes but if you quickly put a geiger counter next to the silver, counts can be detected. In my best runs, I have gotten a piece of silver to about 250CPM over background on a CDV-700 geiger-counter. The disadvantages of this are that it requires a decent neutron flux (at least about 100,000 neutrons which is above the average "beginners first run"  neutron rate. Also, it is somehow difficult to calibrate, and the counts cant be taken until after the fusor has been shut off.</li>
+<li>A proportional TUbe. Tubes can be purchased which are filled with either BF3 or Helium-3 (some very old tubes are Boron-10 lined inert gas tubes). These tubes, similar to a geiger counter, can be used witha counting device to detect electrical pulses when neutrons pass through the tue. Either an all-in-one counter can be used, often made by a company called Ludium, or a modular counting system can be made using NIM modules. The tube is surrounded by about 2 inches of moderating material such as wax or water. This is by far the most accurate and useful form of neutron detection, however the cost of a new tube is prohibitive to most people, and they are extremely rare on the surplux market. Also, counting equipment can become quite costly.</li>
+<p2>
+  NIM Configuration: If you chose to make a NIM setup as I have, the typical layout to a charge sensitive pre-amplifier at the head of the proportional tube, which is plugged into both a high voltage power supply generating positive polarity voltage appropriate for the tube (in the range of 800V-2kV generally). The amplifier also hooks into a shaping amplifier, which is followed by a single channel analyzer (for setting the detection discrimination leel), followed by a pulse counter and/or rate meter.
+</p2>
 
+<style>
+li {font-size:15px; color: #C7C6C3; }
+</style>
+<style>
+p2 {font-size:25px; color: #C7C6C3; }
+</style>
+<style>
+p {font-size:20px; color: #C7C6C3; }
+</style>
+<a href="index7.html"  >go to the previous step(7)</a>
+<a href="index9.html"  >go to the final step</a>
+<style>
+a:link, a:visited {
+  background-color: navy;
+  color: white;
+  border: 2px solid lightblue;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: blue;
+  color: white;
+}
+</style>
