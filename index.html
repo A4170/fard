@@ -94,11 +94,9 @@
 
         /* Hide YouTube Video */
         .hidden-video {
-            width: 1px;
-            height: 1px;
-            opacity: 0;
-            position: absolute;
-            left: -9999px;
+            width: 0px;
+            height: 0px;
+            border: none;
         }
     </style>
 </head>
@@ -131,7 +129,7 @@
     <!-- YouTube Audio Player -->
     <div class="audio-container">
         <iframe id="youtube-audio" class="hidden-video"
-            src="https://youtu.be/lpMKALgjU4M?"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID?enablejsapi=1&origin=https://YOUR_GITHUB_USERNAME.github.io"
             frameborder="0" allow="autoplay"></iframe>
         <button class="audio-button" onclick="toggleYouTubeAudio()">Play Music</button>
     </div>
