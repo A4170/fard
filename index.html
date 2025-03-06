@@ -126,31 +126,32 @@
 
     <hr>
 
-    <!-- YouTube Audio Player -->
-    <div class="audio-container">
-        <iframe id="youtube-audio" class="hidden-video"
-            src="https://www.youtube.com/watch?v=HJNjBMiVNQI"
-            frameborder="0" allow="autoplay"></iframe>
-        <button class="audio-button" onclick="toggleYouTubeAudio()">Play Music</button>
-    </div>
+    <!-- Audio Player -->
+<div class="audio-container">
+    <audio id="audio-player" loop>
+        <source src="your-audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="audio-button" onclick="toggleAudio()">Play Music</button>
+</div>
 
-    <script>
-        let youtubePlayer = document.getElementById("youtube-audio");
-        let audioButton = document.querySelector(".audio-button");
-        let isPlaying = false;
+<script>
+    let audioPlayer = document.getElementById("audio-player");
+    let audioButton = document.querySelector(".audio-button");
+    let isPlaying = false;
 
-        function toggleYouTubeAudio() {
-            if (!isPlaying) {
-                youtubePlayer.src = youtubePlayer.src.replace("autoplay=0", "autoplay=1");
-                audioButton.textContent = "Pause Music";
-                isPlaying = true;
-            } else {
-                youtubePlayer.src = youtubePlayer.src.replace("autoplay=1", "autoplay=0");
-                audioButton.textContent = "Play Music";
-                isPlaying = false;
-            }
+    function toggleAudio() {
+        if (!isPlaying) {
+            audioPlayer.play();
+            audioButton.textContent = "Pause Music";
+            isPlaying = true;
+        } else {
+            audioPlayer.pause();
+            audioButton.textContent = "Play Music";
+            isPlaying = false;
         }
-    </script>
+    }
+</script>
 
 </body>
 </html>
